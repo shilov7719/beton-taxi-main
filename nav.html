@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            Новости
+        </a>
+        <a href="news-item.html" style="display: block; margin-bottom: 20px;">
+            Статья
+        </a>
+        <a href="partners.html" style="display: block; margin-bottom: 20px;">
+            Партнеры
+        </a>
+        <a href="become-partner.html" style="display: block; margin-bottom: 20px;">
+            Стать партнером
+        </a>
+        <a href="loyality.html" style="display: block; margin-bottom: 20px;">
+            Программа лояльности
+        </a>
+        <a href="calc.html" style="display: block; margin-bottom: 20px;">
+            Калькуляторы
+        </a>
+        <a href="lk.html" style="display: block; margin-bottom: 20px;">
+            Лк пользователь
+        </a>
+        <a href="lk.html" style="display: block; margin-bottom: 20px;">
+            Лк менеджер
+        </a>
+
+
+        <a href="lie.html" style="display: block; margin-bottom: 20px;">
+            Обман
+        </a>
+        <a href="all-inclusive.html" style="display: block; margin-bottom: 20px;">
+            Все включено
+        </a>
+        <a href="lifehack.html" style="display: block; margin-bottom: 20px;">
+            Лайфхаки
+        </a>
+        <a href="guide.html" style="display: block; margin-bottom: 20px;">
+            Памятка
+        </a>
+        <a href="guarantee.html" style="display: block; margin-bottom: 20px;">
+            Гарантия
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+
+
+
+
+        <button data-modal="authModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Вход в личный кабинет
+        </button>
+        <button data-modal="loginModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Вход в личный кабинет 2
+        </button>
+        <button data-modal="regModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация
+        </button>
+        <button data-modal="regModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация 2
+        </button>
+        <button data-modal="regModal3" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация 3
+        </button>
+        <button data-modal="regModal4" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация 4
+        </button>
+        <button data-modal="regModal5" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация 5
+        </button>
+        <button data-modal="regModal6" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация 6
+        </button>
+        <button data-modal="regModal7" style="border: 2px solid #000;margin-bottom: 20px;">
+            Быстрая регистрация
+        </button>
+        <button data-modal="regModal8" style="border: 2px solid #000;margin-bottom: 20px;">
+            Быстрая регистрация
+        </button>
+        <button data-modal="successModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Спасибо за заказ!
+        </button>
+        <button data-modal="callModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Форма обратной связи
+        </button>
+        <button data-modal="editModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Изменить данные
+        </button>
+        <button data-modal="bonusModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Начисление/списание бонусов
+        </button>
+        <button data-modal="claimModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Оставить претензию
+        </button>
+        <button data-modal="orderModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Требуется специальный бетон?
+        </button>
+
+
+        <!--        <code>-->
+
+
+        <!--            ('components/page-blocks/_filter-slider.html',{ <br>-->
+        <!--            "start1":"0", <br>-->
+        <!--            "start2":"30000", <br>-->
+        <!--            "min":"1000", <br>-->
+        <!--            "max":"100000", <br>-->
+        <!--            })-->
+
+        <!--        </code>-->
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="authModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Вход в личный кабинет
+            </div>
+            <div class="modal__wrap">
+                <div class="modal__nav">
+                    <button class="modal__btn m-btn m-btn--big m-btn-yellow">
+                        <span>Войти</span>
+                    </button>
+                    <button class="modal__btn m-btn m-btn--big m-btn-gray2">
+                        <span>Зарегестрироваться</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="loginModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Вход в личный кабинет
+            </div>
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Логин">
+                        </div>
+                        <div class="fg">
+                            <input type="password" placeholder="Пароль">
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Войти</span>
+                        </button>
+                        <button class="modal-form__btn2">
+                            <span>Забыли пароль?</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Регистрация
+            </div>
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-radios">
+                        <div class="modal-radios__item">
+                            <div class="m-radio">
+                                <input checked type="radio" name="userType">
+                                <label><span>Физическое лицо</span></label>
+                            </div>
+                        </div>
+                        <div class="modal-radios__item">
+                            <div class="m-radio">
+                                <input type="radio" name="userType">
+                                <label><span>Организация</span></label>
+                            </div>
+                        </div>
+                        <div class="modal-radios__item">
+                            <div class="m-radio">
+                                <input type="radio" name="userType">
+                                <label><span>Водитель</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Далее</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Регистрация
+            </div>
+            <div class="modal__desc">
+                Физическое лицо
+            </div>
+            <img src="img/modal-img.png" alt="" class="modal__img">
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Фамилия">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Отчество">
+                        </div>
+                        <div class="fg">
+                            <input type="tel" placeholder="Телефон">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Далее</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal3">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Регистрация
+            </div>
+            <div class="modal__desc">
+                Физическое лицо
+            </div>
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Логин">
+                        </div>
+                        <div class="fg">
+                            <input type="password" placeholder="Пароль">
+                        </div>
+                        <div class="fg">
+                            <input type="password" placeholder="Повторите пароль">
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Зарегестрироваться</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal4">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Вы успешно
+                зарегистрировались
+            </div>
+            <div class="modal__desc">
+                Зайдите в сервис используя свой логин и пароль.
+            </div>
+            <div class="modal__wrap">
+                <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                    <span>Войти в личный кабинет</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal5">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Регистрация
+            </div>
+            <div class="modal__desc">
+                Организация
+            </div>
+            <img src="img/modal-img2.png" alt="" class="modal__img modal__img2">
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Фамилия">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Отчество">
+                        </div>
+                        <div class="fg">
+                            <input type="tel" placeholder="Телефон">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="ИНН">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Реквизиты">
+                        </div>
+                    </div>
+                    <div class="modal-form__files">
+                        <div class="file-input">
+                            <input type="file">
+                            <div class="file-input__wrap">
+                                <img src="img/clip.svg" alt="">
+                                <span>Прикрепить документы</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Далее</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal6">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Регистрация
+            </div>
+            <div class="modal__desc">
+                Водитель
+            </div>
+            <img src="img/modal-img.svg" alt="" class="modal__img modal__img3">
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Фамилия">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Отчество">
+                        </div>
+                        <div class="fg">
+                            <input type="tel" placeholder="Телефон">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="modal-form__files">
+                        <div class="file-input">
+                            <input type="file">
+                            <div class="file-input__wrap">
+                                <img src="img/clip.svg" alt="">
+                                <span>Прикрепить документы на машину</span>
+                            </div>
+                        </div>
+
+                        <div class="file-input">
+                            <input type="file">
+                            <div class="file-input__wrap">
+                                <img src="img/clip.svg" alt="">
+                                <span>Прикрепить права</span>
+                            </div>
+                        </div>
+
+                        <div class="file-input">
+                            <input type="file">
+                            <div class="file-input__wrap">
+                                <img src="img/clip.svg" alt="">
+                                <span>Прикрепить фото машины</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Далее</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal7">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Быстрая регистрация
+            </div>
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="fg">
+                            <input type="tel" placeholder="Телефон">
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Отправить смс код</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal8">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Быстрая регистрация
+            </div>
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="СМС код">
+                            <button class="modal-form__code">
+                                Отправить код повторно
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Оформить заказ</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Спасибо за заказ!
+            </div>
+            <div class="modal__desc">
+                Уже начали обработку.
+            </div>
+            <div class="modal__wrap">
+                <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                    <span>Вернуться на главную</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="callModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Форма обратной связи
+            </div>
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="fg">
+                            <input type="tel" placeholder="Телефон">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Отправить</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="editModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Изменить данные
+            </div>
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg _type2">
+                            <label>ФИО</label>
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="fg _type2">
+                            <label>Телефон</label>
+                            <input type="tel" placeholder="Телефон">
+                        </div>
+                        <div class="fg _type2">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Сохранить изменения</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="bonusModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Начисление/списание
+                бонусов
+            </div>
+            <div class="modal-bonus">
+                <div class="modal-bonus__wrap">
+                    <img src="img/bonus.svg" alt="">
+                    <div class="modal-bonus__info">
+                        <div class="modal-bonus__num">
+                            12 000
+                        </div>
+                        <div class="modal-bonus__desc">
+                            Накоплено бонусов
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bonuses">
+                <div class="bonus-row">
+                    <div class="bonus-row__col">
+                        <div class="bonus-row__date">21.02.23</div>
+                        <div class="bonus-row__id">Заказ № 123456 78965</div>
+                    </div>
+                    <div class="bonus-row__col2">
+                        <div class="bonus-row__change">+20 бонусов</div>
+                    </div>
+                </div>
+                <div class="bonus-row">
+                    <div class="bonus-row__col">
+                        <div class="bonus-row__date">21.02.23</div>
+                        <div class="bonus-row__id">Заказ № 123456 78965</div>
+                    </div>
+                    <div class="bonus-row__col2">
+                        <div class="bonus-row__change _red">-20 бонусов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal claim-modal" id="claimModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Оставить претензию
+            </div>
+            <div class="claim-modal__desc">
+                <b>Вас что-то не устроило? Возникли проблемы с заказом?</b>
+                Товар не соответствует описанию? Оставьте подробную претензию в этом окне, и она тут же окажется на столе генерального директора. Мы решим сложившуюся проблему максимально быстро и качественно!
+            </div>
+
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="fg">
+                            <input type="tel" placeholder="Телефон для связи">
+                        </div>
+                        <div class="fg">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="fg">
+                            <textarea placeholder="Текст сообщения"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Отправить претензию</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal order-modal" id="orderModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7867 1.24296C15.8544 1.17535 15.908 1.09508 15.9446 1.00674C15.9812 0.918404 16 0.823724 16 0.728108C16 0.632491 15.9812 0.537811 15.9446 0.449473C15.908 0.361135 15.8544 0.280869 15.7867 0.213258C15.7191 0.145647 15.6389 0.0920148 15.5505 0.055424C15.4622 0.0188331 15.3675 0 15.2719 0C15.1763 0 15.0816 0.0188331 14.9933 0.055424C14.9049 0.0920148 14.8247 0.145647 14.757 0.213258L8 6.97175L1.24296 0.213258C1.17535 0.145647 1.09508 0.0920148 1.00674 0.055424C0.918404 0.0188331 0.823724 7.12398e-10 0.728108 0C0.632491 -7.12398e-10 0.537811 0.0188331 0.449473 0.055424C0.361135 0.0920148 0.280869 0.145647 0.213258 0.213258C0.145647 0.280869 0.0920148 0.361135 0.055424 0.449473C0.0188331 0.537811 -7.12398e-10 0.632491 0 0.728108C7.12398e-10 0.823724 0.0188331 0.918404 0.055424 1.00674C0.0920148 1.09508 0.145647 1.17535 0.213258 1.24296L6.97175 8L0.213258 14.757C0.076711 14.8936 0 15.0788 0 15.2719C0 15.465 0.076711 15.6502 0.213258 15.7867C0.349804 15.9233 0.535002 16 0.728108 16C0.921214 16 1.10641 15.9233 1.24296 15.7867L8 9.02824L14.757 15.7867C14.8936 15.9233 15.0788 16 15.2719 16C15.465 16 15.6502 15.9233 15.7867 15.7867C15.9233 15.6502 16 15.465 16 15.2719C16 15.0788 15.9233 14.8936 15.7867 14.757L9.02824 8L15.7867 1.24296Z" fill="#ACACAC" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Требуется специальный бетон?
+            </div>
+            <div class="modal__desc">
+                Отправим ваш запрос на все заводы
+            </div>
+
+            <div class="modal__wrap">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <div class="fg">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="fg">
+                            <input type="tel" placeholder="Телефон">
+                        </div>
+                        <div class="fg">
+                            <textarea placeholder="Комментарий"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn--big m-btn-yellow">
+                            <span>Заказать у поставщиков</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
